@@ -1,7 +1,6 @@
 # 비상연락망 문제
-# 횟수만큼 노드 움직이기
-# 움직인 뒤, 해당 노드들 리스트에 집어 넣기
-# 가장 큰 노드 출력하기
+# BFS 돌면서 레벨 체크하고
+# 레벨 가장 높은 것 중 가장 큰 값 뽑기
 from collections import deque
 
 def 너비우선탐색(start,cnt):
@@ -15,8 +14,6 @@ def 너비우선탐색(start,cnt):
                 visited[x] = 1
                 check_list.append((cnt, x))
                 que.append((x,cnt+1))
-
-# 방향키 만들기
 
 
 for test_case in range(1,11):
