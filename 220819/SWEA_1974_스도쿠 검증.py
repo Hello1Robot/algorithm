@@ -21,7 +21,6 @@ for test_case in range(1,T+1):
                 cube += sdoku[i][j+2]+sdoku[i+1][j+2]+sdoku[i+2][j+2]
                 if cube == 45:
                     cube = 0
-
                 else:
                     res = 0
                     break
