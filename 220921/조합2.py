@@ -4,7 +4,7 @@ def nCr(n, r, s):
     else:
         for i in range(s, n-r+1):
             comb[r-1] = A[i]
-            nCr(n, r-1, I+1)
+            nCr(n, r-1, s+1)
 
 A = list(range(1,6))
 n = len(A)

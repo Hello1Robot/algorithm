@@ -8,7 +8,7 @@ def dfs(x,y):
         for i in range(2):
             nx = x + dx[i]
             ny = y + dy[i]
-            if nx >= N or nx < 0 or ny >= N or ny < 0:
+            if nx >= N or ny >= N:
                 continue
             if visited[nx][ny] > visited[x][y] + field[nx][ny]:
                 stk.append((nx,ny))
