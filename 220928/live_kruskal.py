@@ -1,5 +1,5 @@
 def find_set(x):
-    while x!=rep[x]:
+    while x !=rep[x]:
         x = rep[x]
     return x
 

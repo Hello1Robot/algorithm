@@ -41,6 +41,7 @@ for i in range(V+1):
 for _ in range(E):
     u, v, w = map(int, input().split())
     adjM[u][v] = w
+    
 
 D = [0]*(V+1)
 dijkstra(0, V)

@@ -1,4 +1,4 @@
-def prim1(r,V):
+def prim2(r,V):
     MST = [0]*(V+1) # MST 포함 여부
     MST[r] = 1
     s = 0
@@ -28,4 +28,4 @@ for _ in range(E):
     adjM[u][v] = w
     adjM[v][u] = w # 가중치가 있는 무방향 그래프
 
-prim1(0,V)
+print(prim2(0,V))
